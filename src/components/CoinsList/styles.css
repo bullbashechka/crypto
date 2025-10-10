@@ -1,0 +1,32 @@
+.coins-list {
+  width: 95vw; /* почти вся ширина экрана */
+  max-width: 1300px; /* ограничение, чтобы не расползалось на очень широких экранах */
+  margin: 12px auto; /* центрирование и отступы сверху/снизу */
+  background: linear-gradient(135deg, #2e3350, #36383d);
+  border-radius: 20px;
+  padding: 25px 30px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coins-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.coins-list li:last-child {
+  border-bottom: none;
+}
+
+.coins-list li:hover {
+  color: #91a7ff;
+  transform: translateX(6px);
+}

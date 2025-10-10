@@ -1,0 +1,70 @@
+.card {
+  width: 340px;
+  height: 200px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #36383d, #2e3350);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card__owner {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.card__balance {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.card__btn {
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #4c6ef5;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.card__btn:hover {
+  /* background: #3b5bdb;
+  transform: translateY(-2px);
+  outline: none; */
+  outline: 1px solid #91a7ff;
+  outline-offset: 2px;
+}
+
+.card__btn:active {
+  transform: translateY(0);
+  background: #364fc7;
+}

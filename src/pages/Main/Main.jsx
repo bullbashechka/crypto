@@ -1,0 +1,14 @@
+import Card from '../../components/Card/card';
+import CoinsList from '../../components/CoinsList/CoinsList';
+import styles from './styles.module.css';
+
+const Main = ({ balance, addBalance, coins }) => {
+  return (
+    <main className={styles.main}>
+      <Card coins={coins} balance={balance} addBalance={addBalance} />
+      {coins.length > 0 ? <CoinsList coins={coins} /> : <div>Loading...</div>}
+    </main>
+  );
+};
+
+export default Main;

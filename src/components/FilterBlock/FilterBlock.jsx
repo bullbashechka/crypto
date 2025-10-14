@@ -1,20 +1,18 @@
 import './styles.css';
 
-function FilterBlock({ balance, addBalance }) {
+const FilterBlock = () => {
+  const [value, setValue] = useState('');
   return (
-    <div className="card">
-      <p className="card__title">Crypto Finance</p>
-
-      <div className="card__content">
-        <div className="card__owner">Kirill Saidashev</div>
-        <div className="card__balance">{balance} $</div>
-      </div>
-
-      <button className="card__btn" onClick={addBalance}>
-        Add Money
-      </button>
+    <div className="filter-block">
+      <input
+        onChange={event}
+        value={value}
+        className="input"
+        type="text"
+        placeholder="bitcoin"
+      />
     </div>
   );
-}
+};
 
 export default FilterBlock;

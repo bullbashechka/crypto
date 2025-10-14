@@ -13,6 +13,9 @@
 }
 
 .coins-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 12px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 1rem;
@@ -29,4 +32,54 @@
 .coins-list li:hover {
   color: #91a7ff;
   transform: translateX(6px);
+}
+
+.coin-info {
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали по центру */
+  gap: 12px; /* Пространство между логотипом и названием */
+}
+
+.coin-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+}
+
+.coin-name {
+  margin: 0;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coin-prices {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+}
+
+.price-usd,
+.price-btc {
+  margin: 0;
+  color: inherit;
+}
+
+.price-usd {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.price-btc {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }

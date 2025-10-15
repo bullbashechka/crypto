@@ -11,6 +11,7 @@ function App() {
     const fetchData = async () => {
       const data = await getCoinsCurrency();
       setCoins(data.coins);
+      console.log(data);
     };
     fetchData();
   }, []);

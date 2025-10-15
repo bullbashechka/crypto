@@ -13,7 +13,6 @@ export const getCoinsCurrency = async () => {
 
   try {
     const responce = await axios.get(url + '/coins', options);
-
     return responce.data.data;
   } catch (error) {
     console.log(error);

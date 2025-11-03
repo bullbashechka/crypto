@@ -1,5 +1,5 @@
 import './styles.css';
-import { useContext } from 'react';
+import { memo, useContext } from 'react';
 import { CoinsContext } from '../../context/coinsContext';
 import { useFilterCoins } from '../../helpers/hooks/useFilterCoins';
 

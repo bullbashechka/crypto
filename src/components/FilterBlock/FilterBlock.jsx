@@ -1,5 +1,5 @@
 import './styles.css';
-import { memo, useContext } from 'react';
+import React, { memo, useContext } from 'react';
 import { CoinsContext } from '../../context/coinsContext';
 import { useFilterCoins } from '../../helpers/hooks/useFilterCoins';
 
@@ -27,4 +27,4 @@ const FilterBlock = ({ setCoins }) => {
   );
 };
 
-export default React.memo(FilterBlock);
+export default memo(FilterBlock);

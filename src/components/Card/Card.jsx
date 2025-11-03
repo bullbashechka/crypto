@@ -1,6 +1,9 @@
+import { withRuBalance } from '../../helpers/hoc/withRuBalance';
 import './styles.css';
 
-function Card({ balance, addBalance }) {
+function Card({ balance, addBalance, ruBalance }) {
+  console.log({ ruBalance });
+
   return (
     <div className="card">
       <p className="card__title">Crypto Finance</p>
@@ -17,4 +20,4 @@ function Card({ balance, addBalance }) {
   );
 }
 
-export default Card;
+export default withRuBalance(Card);

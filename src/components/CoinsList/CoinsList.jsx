@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import './styles.css';
 
 function CoinsList({ coins }) {
+  const coinsContext = useContext({ CoinsContext });
+  console.log(coinsContext);
+
   return (
     <ul className="coins-list">
       {coins.map((coin) => (

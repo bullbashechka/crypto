@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css';
 
 const FilterBlock = ({ coins, setCoins }) => {
@@ -29,4 +29,4 @@ const FilterBlock = ({ coins, setCoins }) => {
   );
 };
 
-export default FilterBlock;
+export default React.memo(FilterBlock);

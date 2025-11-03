@@ -1,4 +1,4 @@
-import Card from '../../components/Card/card';
+import Card from '../../components/Card/Сard';
 import CoinsList from '../../components/CoinsList/CoinsList';
 import FilterBlock from '../../components/FilterBlock/FilterBlock';
 import styles from './styles.module.css';
